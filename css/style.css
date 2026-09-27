@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#hero {
+    padding-top: 350px;
+    padding-bottom: 200px;
+}
+
+.ball {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    background-color: red;
+    margin-left: 580px;
+    margin-bottom: 400px;
+    animation: ball 2s linear infinite;
+}
+
+@keyframes ball {
+    0%{
+        transform: translateY(0) translateX(0);
+    }
+    50%{
+        transform: translateY(-200px) translateX(50px);
+    }
+    100%{
+        transform: translateY(0) translateX(100px);
+    }
+}
+
+.loading {
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    background-color: white;
+    border: 12px solid transparent;
+    border-bottom: 12px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: sans-serif;
+    animation: loading 1.5s linear infinite;
+    margin-left: 550px;
+}
+
+@keyframes loading {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
